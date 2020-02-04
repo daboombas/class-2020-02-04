@@ -1,0 +1,18 @@
+---
+title: "First Project Redone"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(gov.1005.data)
+```
+
+```{r}
+data("congress")
+congress %>% arrange(desc(age))
+```
